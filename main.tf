@@ -7,3 +7,10 @@ module "gke_cluster" {
   GKE_DISK_SIZE_GB = 10
   GKE_NUM_NODES    = 2
 }
+
+terraform {
+  backend "gcs" {
+    bucket = "tf-gke-demo-tfstate"
+    prefix = "terraform/state"
+  }
+}
