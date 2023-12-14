@@ -15,6 +15,12 @@ variable "GKE_MACHINE_TYPE" {
   description = "Machine type"
 }
 
+variable "GKE_DISK_TYPE" {
+  type        = string
+  default     = "pd-standard"
+  description = "Disk type"
+}
+
 variable "GKE_NUM_NODES" {
   type        = number
   default     = 3
