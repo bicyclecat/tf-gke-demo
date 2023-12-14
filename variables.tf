@@ -21,6 +21,12 @@ variable "GKE_DISK_TYPE" {
   description = "Disk type"
 }
 
+variable "GKE_DISK_SIZE_GB" {
+  type        = string
+  default     = 10
+  description = "Disk size"
+}
+
 variable "GKE_NUM_NODES" {
   type        = number
   default     = 3
